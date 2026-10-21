@@ -1,0 +1,10 @@
+# Normalize text files to LF in the repository (WSL + Windows tools otherwise
+# leave the working tree littered with CRLF-only diffs).
+* text=auto
+
+# Scripts are run by sh directly — LF on every checkout.
+*.sh text eol=lf
+gradlew text eol=lf
+
+# The Windows batch launcher needs CRLF.
+*.bat text eol=crlf

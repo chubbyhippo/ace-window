@@ -1,0 +1,17 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ Platform Gradle Plugin
+.intellijPlatform/
+
+# Kotlin
+.kotlin/
+
+# IDE
+out/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

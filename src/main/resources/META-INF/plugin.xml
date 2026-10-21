@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>io.github.chubbyhippo.ace-window</id>
+    <name>Ace Window</name>
+    <vendor>Chubby Hippo</vendor>
+    <description><![CDATA[
+        Focus or swap visible editors and tool windows using selectable labels.
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="io.github.chubbyhippo.acewindow.AceWindowLifecycle"/>
+        <rawEditorTypedHandler implementationClass="io.github.chubbyhippo.acewindow.AceWindowTypedHandler"/>
+    </extensions>
+    <actions>
+        <action id="AceWindow.Window" class="io.github.chubbyhippo.acewindow.AceWindowAction"
+                text="Ace Window" description="Focus a visible window by label"/>
+        <action id="AceWindow.SwapWindow" class="io.github.chubbyhippo.acewindow.AceSwapWindowAction"
+                text="Ace Swap Window" description="Swap the current editor with a visible window by label"/>
+    </actions>
+</idea-plugin>
