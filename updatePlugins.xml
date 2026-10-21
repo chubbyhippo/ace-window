@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+    <plugin id="io.github.chubbyhippo.ace-window"
+            url="https://github.com/chubbyhippo/ace-window/releases/download/v0.1.0/ace-window-v0.1.0.zip"
+            version="0.1.0">
+        <idea-version since-build="261"/>
+    </plugin>
+</plugins>
